@@ -1,0 +1,12 @@
+Really dumb idea:
+Send the CRC32 of the file, then check if it exists in Cache/index.cache of each player, then each player responds if they have that file.
+
+This is like, really basic file checking. We're not sure if the file is 1:1 to what the server has.
+Then again, this is just like, a really basic multiplayer system. The anti-cheat on this one is honestly relies on the players lmao.
+
+Unless it gets like, highly used. In which case I would honestly move out of python on hosting the websocket.
+
+9-2: No that sounds dumb, and forces players to use FastLoad. Create its own cache instead.
+
+0. Check if NotITG directory exists by doing `..`'s
+1. Load song tree and create crc32 hashes of the directory
